@@ -1,0 +1,65 @@
+.div-navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between; /* Adjust this property based on your layout preferences */
+}
+
+.navbar {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: left;
+  background-color: white;
+  border-bottom: 1px solid rgba(68, 43, 26, 0.6);
+  border-bottom-width: 1px;
+  border-bottom-style: solid;
+}
+
+.navbar ul {
+  list-style: none;
+  display: flex;
+  padding-inline-start: 0px;
+}
+
+.navbar li {
+  margin: 0 20px;
+}
+
+.navbar li a {
+  color: black;
+  text-decoration: none;
+}
+
+.navbar-ul-text {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 11px;
+  line-height: 16px;
+  color: #452b1a;
+  text-align: start;
+  margin-bottom: 6px;
+  margin-top: 2px;
+  text-decoration: none;
+}
+
+.navbar-left-container {
+  flex: 1 0 0;
+  align-items: center;
+}
+
+.logo-container {
+  box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+  text-size-adjust: 100%;
+  display:inline-block;
+  text-align:center;
+
+}
+
+.Products {
+    margin-top: 200px;
+  }
+  

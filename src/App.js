@@ -1,23 +1,33 @@
-import logo from './logo.svg';
 import './App.css';
+import ProductDetail from './pages/ProductDetail'
+import Products from './pages/Products'
+import { BrowserRouter as Router, Routes, Route} from 'react-router-dom'
+import Contact from './pages/Contact';
+import Header from './components/Header';
+import axios from 'axios';
+
+export async function requestApi(endpoint) {
+  try {
+    const response = await axios.get(endpoint);
+    return response.data;
+  } catch (error) {
+    console.error('Error making request:', error);
+    throw error; // Optionally rethrow the error for the caller to handle
+  }
+}
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+        <Router>
+          <Header />
+          <Routes>
+            <Route path='/products' element={<Products />} />
+            <Route path='/products/:product_id' element={<ProductDetail />} />
+            {/* TODO: <Route path='/cart/:shopping_cart_id' element={<ShoppingCart />} /> */}
+            <Route path='/contact' element={<Contact />} />
+          </Routes>
+        </Router>
     </div>
   );
 }
