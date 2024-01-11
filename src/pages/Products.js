@@ -1,5 +1,5 @@
 import { useEffect, useState } from 'react';
-import { requestApi } from '../App';
+import { requestApi } from '../utils/ApiRequest';
 import Product from '../components/Product';
 import '../styles/Products.css'; // Import the new CSS file
 
@@ -19,7 +19,7 @@ export default function Products() {
         };
     
         fetchData();
-    }, [productsEndpoint]);    
+    }, [productsEndpoint]);
 
     return (
         <div className="product-list">

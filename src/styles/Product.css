@@ -1,0 +1,23 @@
+.product {
+  margin-bottom: 20px;
+  box-sizing: border-box;
+  position: relative;
+  margin: 5px;
+}
+
+.product-image {
+  position: relative;
+  overflow: hidden;
+}
+
+.product-image img {
+  max-width: 100%;
+  height: auto;
+  width: 100%;
+}
+
+.product-link {
+    color: black;
+    text-decoration: none;
+  
+}

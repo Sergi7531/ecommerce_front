@@ -9,24 +9,6 @@
   margin-top: 100px;
 }
 
-.product {
-  margin-bottom: 20px;
-  box-sizing: border-box;
-  position: relative;
-  margin: 5px;
-}
-
-.product-image {
-  position: relative;
-  overflow: hidden;
-}
-
-.product-image img {
-  max-width: 100%;
-  height: auto;
-  width: 100%;
-}
-
 .overlay {
   position: absolute;
   bottom: 0;
@@ -49,6 +31,7 @@
   position: relative;
   color: #452b1a;
   text-align: start;
+  text-decoration: none;
   font-family: Helvetica,Helvetica Neue,Arial,Lucida Grande,sans-serif;
 }
 

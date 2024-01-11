@@ -10,7 +10,7 @@
   width: 100%;
   display: flex;
   align-items: center;
-  justify-content: left;
+  justify-content: center;
   background-color: white;
   border-bottom: 1px solid rgba(68, 43, 26, 0.6);
   border-bottom-width: 1px;
@@ -45,7 +45,6 @@
 }
 
 .navbar-left-container {
-  flex: 1 0 0;
   align-items: center;
 }
 
