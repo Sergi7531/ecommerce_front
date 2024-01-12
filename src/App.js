@@ -4,24 +4,24 @@ import Products from './pages/Products'
 import { BrowserRouter as Router, Routes, Route} from 'react-router-dom'
 import Contact from './pages/Contact';
 import Header from './components/Header';
-import { requestApi } from './utils/ApiRequest';
+import { requestApi, authToken } from './utils/ApiRequest';
 import { useEffect, useState } from 'react';
 
 
 export default function App() {
   const [shoppingCart, setShoppingCart] = useState([]);
 
-  const authToken = 'Token 7d64ceca1d9d7cad45c8d20611ae9a778c8a7dac9a653a2ba83dad94d5e783b7'; // Replace with your actual authorization token
-
-  const endpoint = "http://localhost:8000/api/v1/user_cart/"
+  const userCartEndpoint = "http://localhost:8000/api/v1/user_cart/"
 
   useEffect(() => {
     const fetchData = async () => {
       try {
-        const data = await requestApi(endpoint, {
-          Authorization: `${authToken}`
+        const data = await requestApi(userCartEndpoint, {
+          method: 'GET',
+          headers: {
+            'Authorization': authToken,
+          },  
         });
-        console.log('API Response:', data);
         setShoppingCart(data);
       } catch (error) {
         console.error('Error fetching products:', error);
@@ -29,7 +29,7 @@ export default function App() {
     };
   
     fetchData();
-  }, [endpoint, authToken]);
+  }, [userCartEndpoint]);
     
   return (
     <div className="App">

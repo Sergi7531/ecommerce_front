@@ -1,0 +1,145 @@
+/* styles.css */
+
+.product-detail-view {
+    display: flex;
+    margin: 50px auto;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+    
+  .product-details {
+    flex: 0 0 25%;
+    max-width: 25%;
+  }
+  
+  .row {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  .col-md-6 {
+    flex: 0 0 50%;
+    max-width: 50%;
+    padding: 0 10px;
+    box-sizing: border-box;
+  }
+  
+  .carousel-image {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+  }
+  
+  .product-title {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+  }
+  
+  .product-description {
+    margin-bottom: 15px;
+  }
+  
+  .product-price {
+    font-weight: bold;
+    font-size: 1.2em;
+    color: #007bff; /* or your preferred color */
+    margin-bottom: 15px;
+  }
+  
+  .product-sizes {
+    margin-top: 15px;
+  }
+  
+  .product-sizes strong {
+    display: block;
+    margin-bottom: 5px;
+  }
+  
+  .product-sizes ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .product-sizes li {
+    display: inline-block;
+    margin-right: 10px;
+    font-size: 0.9em;
+    border: 1px solid #ddd;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .product-sizes li:hover {
+    background-color: #f0f0f0;
+  }
+  
+  .product-sizes li.selected {
+    background-color: #a0a0a0; /* Add your desired background color for selected item */
+  }  
+  
+  .add-to-cart-button {
+    align-items: center;
+    background-color: rgb(69, 43, 26);
+    background-origin: padding-box;
+    border-bottom-color: rgb(69, 43, 26);
+    border-bottom-style: solid;
+    border-bottom-width: 1px;
+    border-image-repeat: stretch;
+    border-image-slice: 100%;
+    border-image-source: none;
+    border-image-width: 1;
+    border-left-color: rgb(69, 43, 26);
+    border-left-style: solid;
+    border-left-width: 1px;
+    border-right-color: rgb(69, 43, 26);
+    border-right-style: solid;
+    border-right-width: 1px;
+    border-top-color: rgb(69, 43, 26);
+    border-top-style: solid;
+    border-top-width: 1px;
+    color: rgb(255, 255, 255);
+    cursor: pointer;
+    display: flex;
+    font-family: Helvetica, "Helvetica Neue", Arial, "Lucida Grande", sans-serif;
+    font-feature-settings: normal;
+    font-kerning: auto;
+    font-optical-sizing: auto;
+    font-size: 11px;
+    font-stretch: 100%;
+    font-style: normal;
+    font-weight: 700;
+    height: 50px;
+    justify-content: center;
+    letter-spacing: normal;
+    line-height: normal;
+    list-style-image: none;
+    list-style-position: outside;
+    list-style-type: none;
+    margin-left: 8px;
+    margin-right: 8px;
+    margin-top: 16px;
+    outline-color: rgb(255, 255, 255);
+    outline-style: none;
+    outline-width: 0px;
+    overflow-x: visible;
+    overflow-y: visible;
+    padding-block-end: 17px;
+    padding-block-start: 17px;
+    padding-bottom: 17px;
+    padding-inline-end: 30px;
+    padding-inline-start: 30px;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-top: 17px;
+    position: relative;
+    text-align: center;
+    text-indent: 0px;
+    text-rendering: auto;
+    text-shadow: none;
+    text-size-adjust: 100%;
+    text-transform: uppercase;
+    width: 427px;
+  }

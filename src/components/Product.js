@@ -1,6 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import '../styles/Product.css'; // Import the new CSS file
+import '../styles/Product.css';
 
 export default function Product({ product }) {
   return (
@@ -11,7 +11,7 @@ export default function Product({ product }) {
         </div>
         <div>
           <h2 className="product-title">{product.name}</h2>
-          <h2 className="product-price">{`${product.formatted_price} €`}</h2>
+          <h2 className="product-price">{`${product.formatted_price_with_currency} €`}</h2>
         </div>
       </Link>
     </div>
